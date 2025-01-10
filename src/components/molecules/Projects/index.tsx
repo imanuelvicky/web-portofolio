@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import React, { useEffect, useState } from 'react';
 import { listProject } from '@/utils/data';
 import {
@@ -13,8 +13,8 @@ type Project = {
     title: string;
     subtitle: string;
     description: string;
-    images: string[];
-    tech: { src: string; label: string }[];
+    images: StaticImageData[];
+    tech: { src: StaticImageData; label: string }[];
     url: string;
     github: string;
     privateRepo: boolean;
