@@ -18,6 +18,8 @@ type Project = {
     url: string;
     github: string;
     privateRepo: boolean;
+    type: string;
+    platform: string;
 };
 
 export default function Projects() {
