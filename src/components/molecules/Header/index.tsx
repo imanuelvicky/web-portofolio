@@ -54,7 +54,7 @@ export default function Header() {
         >
             <div className="flex flex-row justify-between items-center bg-slate-400 p-2 rounded-full shadow-sm border-b-2">
                 {/* Logo Section */}
-                <button className="flex flex-row items-center gap-3">
+                <button onClick={() => handleScroll("home")} className="flex flex-row items-center gap-3">
                     <div className="rounded-full bg-gray-300 shadow-md p-2">
                         <Image src={Logo} alt="Logo" width={30} height={30} />
                     </div>
@@ -76,13 +76,11 @@ export default function Header() {
                     </div>
                 </nav>
 
-                {/* Contact Button */}
-                <button
-                    onClick={() => handleScroll("contact")}
+                <a href='mailto:imanuelvs19@gmail.com'
                     className="hidden md:block rounded-full bg-gradient-to-r from-blue-800 to-blue-950 text-white px-4 py-2 hover:from-blue-700 hover:to-blue-900 transition-all duration-300"
                 >
                     Contact Me
-                </button>
+                </a>
 
                 {/* Hamburger Menu */}
                 <button

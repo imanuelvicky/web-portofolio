@@ -45,12 +45,22 @@ import TourGuidePlaceDetail from "./Projects/TourGuide/place_detail.png";
 import TourGuideChosenPlaces from "./Projects/TourGuide/chosen_places.png";
 import TourGuidePreviewMap from "./Projects/TourGuide/preview_map.png";
 import TourGuideNavigation from "./Projects/TourGuide/navigation.png";
-import Bangkit1 from "./Certificates/Bangkit/memulai_pemrograman_dengan_kotlin.png"
-import Bangkit2 from "./Certificates/Bangkit/memulai_dasar_pemrograman_menjadi_pengembang_software.png"
-import Bangkit3 from "./Certificates/Bangkit/pengenalan_logika_pemrograman.png"
-import Bangkit4 from "./Certificates/Bangkit/belajar_membuat_aplikasi_android_pemula.png"
-import Bangkit5 from "./Certificates/Bangkit/belajar_dasar_git_github.png"
-import Bangkit6 from "./Certificates/Bangkit/belajar_fundamental_aplikasi_android.png"
+import Dicoding1 from "./Certificates/Dicoding/memulai_pemrograman_dengan_kotlin.png"
+import Dicoding2 from "./Certificates/Dicoding/memulai_dasar_pemrograman_menjadi_pengembang_software.png"
+import Dicoding3 from "./Certificates/Dicoding/pengenalan_logika_pemrograman.png"
+import Dicoding4 from "./Certificates/Dicoding/belajar_membuat_aplikasi_android_pemula.png"
+import Dicoding5 from "./Certificates/Dicoding/belajar_dasar_git_github.png"
+import Dicoding6 from "./Certificates/Dicoding/belajar_fundamental_aplikasi_android.png"
+import Dicoding7 from "./Certificates/Dicoding/belajar_prinsip_pemrograman_solid.png"
+import Dicoding8 from "./Certificates/Dicoding/belajar_pengembangan_aplikasi_android_intermediate.png"
+import Dicoding9 from "./Certificates/Dicoding/belajar_dasar_ux_design.png"
+import DicodingLast from "./Certificates/Dicoding/belajar_membuat_aplikasi_android_jetpack_compose.png"
+import Bangkit from "./Certificates/Bangkit/certificate_completion.png"
+import BangkitScores from "./Certificates/Bangkit/scores.png"
+import HtmlCssCertificate from "./Certificates/Certiport/certificate_html_css.png"
+import CertiportScores from "./Certificates/Certiport/scores.png"
+import BerijalanCertificate from "./Certificates/Berijalan/certificate_bootcamp.png"
+import BerijalanScores from "./Certificates/Berijalan/scores.png"
 
 export {
     Logo,
@@ -101,10 +111,23 @@ export {
     TourGuidePreviewMap,
     TourGuideNavigation,
 
-    Bangkit1,
-    Bangkit2,
-    Bangkit3,
-    Bangkit4,
-    Bangkit5,
-    Bangkit6,
+    Dicoding1,
+    Dicoding2,
+    Dicoding3,
+    Dicoding4,
+    Dicoding5,
+    Dicoding6,
+    Dicoding7,
+    Dicoding8,
+    Dicoding9,
+    DicodingLast,
+
+    Bangkit,
+    BangkitScores,
+
+    HtmlCssCertificate,
+    CertiportScores,
+
+    BerijalanCertificate,
+    BerijalanScores,
 }

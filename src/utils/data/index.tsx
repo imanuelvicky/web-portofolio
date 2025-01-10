@@ -36,12 +36,23 @@ import {
     TrackitMap,
     Ts,
     VueJS,
-    Bangkit1,
-    Bangkit2,
-    Bangkit3
+    Dicoding1,
+    Dicoding2,
+    Dicoding3,
+    Dicoding4,
+    Dicoding5,
+    Dicoding6,
+    Dicoding7,
+    Dicoding8,
+    Dicoding9,
+    DicodingLast,
+    Bangkit,
+    BangkitScores,
+    HtmlCssCertificate,
+    CertiportScores,
+    BerijalanCertificate,
+    BerijalanScores
 } from '@/assets/images';
-import { desc, label } from 'framer-motion/client';
-import { platform } from 'os';
 
 export const listProject = [
     {
@@ -144,19 +155,86 @@ export const listProject = [
 
 export const listCertificates = [
     {
-        community: "Dicoding",
+        community: "Dicoding (Mobile Development)",
         certificates: [
             {
                 title: "Memulai Pemrograman Dengan Kotlin",
-                image: Bangkit1
+                image: Dicoding1,
             },
             {
                 title: "Memulai Dasar Pemrograman untuk Menjadi Pengembang Software",
-                image: Bangkit2
+                image: Dicoding2
             },
             {
                 title: "Pengenalan ke Logika Pemrograman",
-                image: Bangkit3
+                image: Dicoding3
+            },
+            {
+                title: "Belajar Membuat Aplikasi Android untuk Pemula",
+                image: Dicoding4
+            },
+            {
+                title: "Belajar Dasar Git dengan GitHub",
+                image: Dicoding5
+            },
+            {
+                title: "Belajar Fundamental Aplikasi Android",
+                image: Dicoding6
+            },
+            {
+                title: "Belajar Prinsip Pemrograman Solid",
+                image: Dicoding7
+            },
+            {
+                title: "Belajar Membuat Aplikasi Android Intermediate",
+                image: Dicoding8
+            },
+            {
+                title: "Belajar Dasar UX Design",
+                image: Dicoding9
+            },
+            {
+                title: "Belajar Membuat Aplikasi Android dengan Jetpack Compose",
+                image: DicodingLast
+            }
+        ]
+    },
+    {
+        community: "Bangkit Academy",
+        certificates: [
+            {
+                title: "Bangkit Academy Certificate of Completion",
+                image: Bangkit
+            },
+            {
+                title: "Scores",
+                image: BangkitScores
+            }
+        ]
+    },
+    {
+        community: "Certiport (HTML & CSS)",
+        certificates: [
+            {
+                title: "HTML & CSS Certificate",
+                image: HtmlCssCertificate
+            },
+            {
+                title: "Scores",
+                image: CertiportScores
+            }
+        ]
+    },
+    {
+        community: "Berijalan (IT Bootcamp)",
+        certificates: [
+            {
+                title: "Bootcamp Certificate",
+                image: BerijalanCertificate
+            },
+            {
+                title: "Scores",
+                image: BerijalanScores
             }
         ]
     }

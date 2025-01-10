@@ -7,6 +7,7 @@ import Header from "@/components/molecules/Header";
 import Tech from "@/components/molecules/Tech";
 import Projects from "@/components/molecules/Projects";
 import Certificates from "@/components/molecules/Certificates";
+import Footer from "@/components/molecules/Footer";
 
 const lora = Lora({ subsets: ["latin"] });
 
@@ -32,6 +33,9 @@ export default function Home() {
       <div id="certificates">
         <Certificates />
       </div>
+
+      {/* Footer */}
+      <Footer />
     </main>
   );
 }
