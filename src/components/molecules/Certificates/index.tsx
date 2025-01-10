@@ -1,6 +1,14 @@
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import React, { useState } from 'react';
 import { listCertificates } from '@/utils/data';
+
+type Community = {
+  community: string;
+  certificates: {
+    title: string;
+    image: StaticImageData;
+  }[];
+};
 
 export default function Certificates() {
   return (
@@ -21,7 +29,7 @@ export default function Certificates() {
   );
 }
 
-function CertificateCarousel({ community, certificates }) {
+function CertificateCarousel({ community, certificates }: Community) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNext = () => {
