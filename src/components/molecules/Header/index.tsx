@@ -95,7 +95,7 @@ export default function Header() {
             <nav
                 className={clsxm(
                     "md:hidden overflow-hidden transition-all duration-300 ease-in-out bg-slate-300 rounded-b-xl shadow-lg mx-8 mt-1",
-                    menuOpen ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
+                    menuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
                 )}
             >
                 <ul className="flex flex-col gap-2 p-3">
@@ -108,6 +108,11 @@ export default function Header() {
                             {item.name}
                         </button>
                     ))}
+                    <a href='mailto:imanuelvs19@gmail.com'
+                        className="w-fit self-center rounded-full bg-gradient-to-r from-blue-800 to-blue-950 text-white px-8 py-3 hover:from-blue-700 hover:to-blue-900 transition-all duration-300 mt-4"
+                    >
+                        Contact Me
+                    </a>
                 </ul>
             </nav>
         </header>
