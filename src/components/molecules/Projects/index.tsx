@@ -105,7 +105,7 @@ export default function Projects() {
                             </div>
                         </div>
                         <div className="w-full lg:w-2/5 p-5">
-                            <div className="overflow-hidden relative w-full h-64 lg:h-72">
+                            <div className="overflow-hidden relative w-full h-auto">
                                 <div
                                     className="flex transition-transform duration-500"
                                     style={{
@@ -118,11 +118,14 @@ export default function Projects() {
                                             className="w-full flex-shrink-0"
                                             onClick={() => handleImageClick(project)}
                                         >
-                                            <Image
-                                                src={image}
-                                                alt="Project Screenshot"
-                                                className="w-full h-full object-cover rounded-lg"
-                                            />
+                                            <div className="relative w-full h-64 lg:h-72">
+                                                <Image
+                                                    src={image}
+                                                    alt="Project Screenshot"
+                                                    className="object-contain rounded-lg"
+                                                    fill
+                                                />
+                                            </div>
                                         </button>
                                     ))}
                                 </div>
@@ -142,11 +145,10 @@ export default function Projects() {
                                             )
                                         }
                                         className={`border-2 rounded-full w-6 ${activeSlides[index] === imageIndex
-                                            ? "border-gray-600"
-                                            : "hover:border-gray-300"
+                                                ? "border-gray-600"
+                                                : "hover:border-gray-300"
                                             }`}
-                                    >
-                                    </button>
+                                    ></button>
                                 ))}
                             </div>
                         </div>
@@ -155,17 +157,18 @@ export default function Projects() {
             </div>
 
             {selectedProject && (
-                <Modal isOpen={isOpen} size='3xl' onOpenChange={onOpenChange}>
+                <Modal isOpen={isOpen} onOpenChange={onOpenChange} size="4xl" className="my-auto">
                     <ModalContent>
                         <ModalHeader>
                             <h2 className="text-lg font-bold">{selectedProject.title}</h2>
                         </ModalHeader>
                         <ModalBody>
-                            <div className="relative w-full h-64 lg:h-96 overflow-hidden">
+                            <div className="relative w-full overflow-hidden">
                                 <div
                                     className="flex transition-transform duration-500"
                                     style={{
-                                        transform: `translateX(-${activeSlides[listProject.indexOf(selectedProject)] * 100}%)`,
+                                        transform: `translateX(-${activeSlides[listProject.indexOf(selectedProject)] * 100
+                                            }%)`,
                                     }}
                                 >
                                     {selectedProject.images.map((image, index) => (
@@ -173,7 +176,7 @@ export default function Projects() {
                                             key={index}
                                             src={image}
                                             alt="Modal Project Screenshot"
-                                            className="w-full h-full object-cover"
+                                            className="w-full object-contain max-h-[24rem] lg:max-h-[36rem] rounded-lg"
                                         />
                                     ))}
                                 </div>
@@ -193,14 +196,14 @@ export default function Projects() {
                                             ? "border-gray-600"
                                             : "hover:border-gray-300"
                                             }`}
-                                    >
-                                    </button>
+                                    ></button>
                                 ))}
                             </div>
                         </ModalBody>
                     </ModalContent>
                 </Modal>
             )}
+
         </div>
     );
 }
