@@ -23,7 +23,7 @@ export default function SelfDescription({ project, years }: { project: number, y
                 </div>
                 <div className="flex flex-row gap-6 max-lg:justify-center">
                     <div className="flex flex-row gap-2 items-center bg-slate-300 w-fit rounded-md">
-                        <p className="text-2xl font-bold bg-amber-600 w-12 px-2 py-1 rounded-md">
+                        <p className="text-2xl font-bold bg-[#EE6C4D] w-12 px-2 py-1 rounded-md">
                             {years}
                         </p>
                         <p className="text-gray-700 pr-2">
@@ -31,7 +31,7 @@ export default function SelfDescription({ project, years }: { project: number, y
                         </p>
                     </div>
                     <div className="flex flex-row gap-2 items-center bg-slate-300 w-fit rounded-md">
-                        <p className="text-2xl font-bold bg-amber-600 w-12 text-center px-2 py-1 rounded-md">
+                        <p className="text-2xl font-bold bg-[#EE6C4D] w-12 text-center px-2 py-1 rounded-md">
                             {project}
                         </p>
                         <p className="text-gray-700 pr-2">

@@ -12,8 +12,8 @@ type Community = {
 
 export default function Certificates() {
   return (
-    <div className="bg-gradient-to-b from-gray-100 to-gray-200 py-16 px-5">
-      <h1 className="text-4xl font-extrabold text-center mb-12 text-gray-800">
+    <div className="bg-[#E0FBFC] py-16 px-5">
+      <h1 className="text-4xl font-extrabold text-center mb-12 text-[#293241]">
         My Certificates
       </h1>
       <div className="space-y-14">
@@ -46,7 +46,7 @@ function CertificateCarousel({ community, certificates }: Community) {
 
   return (
     <div className="bg-white p-8 rounded-lg shadow-xl max-w-4xl mx-auto">
-      <h2 className="text-2xl font-semibold text-gray-700 mb-8 text-center">
+      <h2 className="text-2xl font-semibold text-[#293241] mb-8 text-center">
         {community}
       </h2>
       <div className="flex flex-col items-center">
@@ -75,7 +75,7 @@ function CertificateCarousel({ community, certificates }: Community) {
 
         <div className="w-8/12 bg-gray-300 rounded-full mt-4">
           <div
-            className="bg-gray-700 h-1 rounded-full transition-all duration-500 ease-in-out"
+            className="bg-[#293241] h-1 rounded-full transition-all duration-500 ease-in-out"
             style={{ width: `${progressPercentage}%` }}
           ></div>
         </div>
@@ -84,14 +84,14 @@ function CertificateCarousel({ community, certificates }: Community) {
           <button
             onClick={handlePrev}
             disabled={certificates.length === 1}
-            className="px-6 py-2 bg-gray-700 text-white font-semibold rounded-lg hover:bg-gray-900 transition-colors duration-200 shadow-lg disabled:bg-gray-400 disabled:cursor-not-allowed"
+            className="px-6 py-2 bg-[#475569] text-white font-semibold rounded-lg hover:bg-[#293241] transition-colors duration-200 shadow-lg disabled:bg-gray-400 disabled:cursor-not-allowed"
           >
             Back
           </button>
           <button
             onClick={handleNext}
             disabled={certificates.length === 1}
-            className="px-6 py-2 bg-gray-700 text-white font-semibold rounded-lg hover:bg-gray-900 transition-colors duration-200 shadow-lg disabled:bg-gray-400 disabled:cursor-not-allowed"
+            className="px-6 py-2 bg-[#475569] text-white font-semibold rounded-lg hover:bg-[#293241] transition-colors duration-200 shadow-lg disabled:bg-gray-400 disabled:cursor-not-allowed"
           >
             Next
           </button>

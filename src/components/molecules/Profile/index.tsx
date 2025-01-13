@@ -16,7 +16,7 @@ export default function Profile({title}: {title: string}) {
     };
 
     return (
-        <div className="rounded-3xl p-8 md:p-12 bg-gradient-to-r from-slate-400 to-slate-500 shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out">
+        <div className="rounded-3xl p-8 md:p-12 bg-gradient-to-r from-[#98C1D9] to-[#3D5A80] shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out">
             <div className="flex flex-col items-center">
                 <Image
                     src={FotoDiri}

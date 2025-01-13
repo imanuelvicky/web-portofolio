@@ -49,8 +49,8 @@ export default function Projects() {
     };
 
     return (
-        <div className="bg-gray-100 py-10 px-5">
-            <h1 className="text-3xl font-bold text-center mb-10 text-gray-800">My Projects</h1>
+        <div className="bg-[#E0FBFC] py-10 px-5">
+            <h1 className="text-3xl font-bold text-center mb-10 text-[#293241]">My Projects</h1>
             <div className="space-y-10">
                 {listProject.map((project, index) => (
                     <div
@@ -60,7 +60,7 @@ export default function Projects() {
                         <div className="p-5 w-full lg:w-1/2 flex flex-col gap-5 my-auto">
                             <div className='flex flex-col gap-3'>
                                 <div>
-                                    <h2 className="text-2xl font-bold text-gray-800">{project.title}</h2>
+                                    <h2 className="text-2xl font-bold text-[#293241]">{project.title}</h2>
                                     <h3 className="text-lg text-gray-500">{project.subtitle}</h3>
                                 </div>
 
@@ -122,7 +122,7 @@ export default function Projects() {
                                                 <Image
                                                     src={image}
                                                     alt="Project Screenshot"
-                                                    className="object-contain rounded-lg"
+                                                    className="w-auto h-auto object-contain"
                                                     fill
                                                 />
                                             </div>
@@ -145,7 +145,7 @@ export default function Projects() {
                                             )
                                         }
                                         className={`border-2 rounded-full w-6 ${activeSlides[index] === imageIndex
-                                                ? "border-gray-600"
+                                                ? "border-[#293241]"
                                                 : "hover:border-gray-300"
                                             }`}
                                     ></button>

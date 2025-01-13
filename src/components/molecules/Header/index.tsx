@@ -52,10 +52,10 @@ export default function Header() {
                 isScrolled ? "opacity-75" : "opacity-100"
             )}
         >
-            <div className="flex flex-row justify-between items-center bg-slate-400 p-2 rounded-full shadow-sm border-b-2">
+            <div className="flex flex-row justify-between items-center bg-[#98c1d9] p-2 rounded-full shadow-sm border-b-2">
                 {/* Logo Section */}
                 <button onClick={() => handleScroll("home")} className="flex flex-row items-center gap-3">
-                    <div className="rounded-full bg-gray-300 shadow-md p-2">
+                    <div className="rounded-full bg-[#E0FBFC] shadow-md p-2">
                         <Image src={Logo} alt="Logo" width={30} height={30} />
                     </div>
                     <p className={clsxm(dmSans.className, "text-2xl font-bold text-gray-800")}>imanuel.vs</p>
@@ -68,7 +68,7 @@ export default function Header() {
                             <button
                                 key={index}
                                 onClick={() => handleScroll(item.id)}
-                                className="text-gray-900 hover:text-gray-100 hover:bg-gray-500 p-2 rounded-full transition-all duration-400"
+                                className="text-gray-900 hover:text-white hover:bg-[#3d5a80] p-2 rounded-full transition-all duration-400"
                             >
                                 {item.name}
                             </button>
@@ -76,16 +76,17 @@ export default function Header() {
                     </div>
                 </nav>
 
-                <a href='mailto:imanuelvs19@gmail.com'
-                    className="hidden md:block rounded-full bg-gradient-to-r from-blue-800 to-blue-950 text-white px-4 py-2 hover:from-blue-700 hover:to-blue-900 transition-all duration-300"
+                <a href="mailto:imanuelvs19@gmail.com"
+                    className="hidden md:block rounded-full bg-gradient-to-r from-[#3D5A80] to-[#293241] text-white px-4 py-2 hover:from-[#507CA0] hover:to-[#1F2833] transition-all duration-300"
                 >
                     Contact Me
                 </a>
 
+
                 {/* Hamburger Menu */}
                 <button
                     onClick={toggleMenu}
-                    className="md:hidden border-2 rounded-full px-4 py-2 border-gray-300 hover:bg-gray-200 transition-all duration-200"
+                    className="md:hidden border-2 rounded-full px-4 py-2 border-[#E0FBFC] hover:bg-[#527A99] transition-all duration-200"
                 >
                     <Hamburger />
                 </button>
@@ -103,13 +104,13 @@ export default function Header() {
                         <button
                             key={index}
                             onClick={() => handleScroll(item.id)}
-                            className="text-gray-900 hover:text-gray-100 hover:bg-gray-500 p-2 rounded-full transition-all duration-400"
+                            className="text-gray-900 hover:text-white hover:bg-[#3d5a80] p-2 rounded-full transition-all duration-400"
                         >
                             {item.name}
                         </button>
                     ))}
                     <a href='mailto:imanuelvs19@gmail.com'
-                        className="w-fit self-center rounded-full bg-gradient-to-r from-blue-800 to-blue-950 text-white px-8 py-3 hover:from-blue-700 hover:to-blue-900 transition-all duration-300 mt-4"
+                        className="w-fit self-center rounded-full bg-gradient-to-r from-[#3D5A80] to-[#293241] text-white px-8 py-3 hover:from-[#507CA0] hover:to-[#1F2833] transition-all duration-300 mt-4"
                     >
                         Contact Me
                     </a>
