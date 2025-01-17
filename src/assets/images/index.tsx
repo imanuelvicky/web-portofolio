@@ -61,6 +61,7 @@ import HtmlCssCertificate from "./Certificates/Certiport/certificate_html_css.pn
 import CertiportScores from "./Certificates/Certiport/scores.png"
 import BerijalanCertificate from "./Certificates/Berijalan/certificate_bootcamp.png"
 import BerijalanScores from "./Certificates/Berijalan/scores.png"
+import DCACertificate from "./Certificates/DevID/dca.png"
 
 export {
     Logo,
@@ -130,4 +131,6 @@ export {
 
     BerijalanCertificate,
     BerijalanScores,
+
+    DCACertificate,
 }

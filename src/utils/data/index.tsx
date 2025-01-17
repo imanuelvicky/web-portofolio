@@ -51,7 +51,8 @@ import {
     HtmlCssCertificate,
     CertiportScores,
     BerijalanCertificate,
-    BerijalanScores
+    BerijalanScores,
+    DCACertificate
 } from '@/assets/images';
 
 export const listProject = [
@@ -235,6 +236,15 @@ export const listCertificates = [
             {
                 title: "Scores",
                 image: BerijalanScores
+            }
+        ]
+    },
+    {
+        community: "Dev.id x Bangkit Academy",
+        certificates: [
+            {
+                title: "DCA Certificate",
+                image: DCACertificate
             }
         ]
     }
