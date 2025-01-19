@@ -65,6 +65,7 @@ export default function Projects() {
                                 </div>
 
                                 <p className="text-gray-700">{project.description}</p>
+                                <p className="text-gray-500 font-semibold ">Platform: <span className='w-full bg-slate-700 text-white rounded-md px-2 font-normal text-sm'>{project.platform}</span></p>
                             </div>
 
                             <div className='flex flex-col gap-3'>
