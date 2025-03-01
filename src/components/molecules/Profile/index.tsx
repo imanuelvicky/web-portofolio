@@ -30,7 +30,7 @@ export default function Profile({title}: {title: string}) {
                 </h2>
                 <p className="text-white">{title}</p>
                 <div className="flex flex-row gap-6 mt-4">
-                    <a href='https://drive.google.com/file/d/1JPqCmtcHRzzMaZBerD0y9SaS7VaqmDNW/view?usp=sharing' target='_blank' className="bg-blue-700 py-3 px-5 rounded-md text-white hover:bg-blue-900 transition-all duration-200">Resume</a>
+                    <a href='https://drive.google.com/file/d/1hxTzOiZTtllUdrbbk5LP_4Ulpt4AQJeE/view?usp=sharing' target='_blank' className="bg-blue-700 py-3 px-5 rounded-md text-white hover:bg-blue-900 transition-all duration-200">Resume</a>
                     <button className="shadow-md py-3 px-5 rounded-md bg-white hover:bg-gray-300 transition-all duration-200"
                         onClick={() => handleScroll("projects")}>Projects</button>
                 </div>
