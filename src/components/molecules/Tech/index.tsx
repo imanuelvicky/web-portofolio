@@ -10,6 +10,8 @@ import {
     Tailwind,
     Ts,
     VueJS,
+    Angular,
+    Ionic,
 } from "@/assets/images";
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
@@ -22,6 +24,8 @@ export default function Tech() {
         NextJS,
         VueJS,
         Kotlin,
+        Ionic,
+        Angular,
         Tailwind,
         Mysql,
         Postgre,

@@ -11,6 +11,8 @@ import Firebase from "./firebase.png";
 import Js from "./javascript.png";
 import Ts from "./typescript.png";
 import Mapbox from "./mapbox.png";
+import Angular from "./angular.png";
+import Ionic from "./ionic.png";
 
 import KedairekaLanding from "./Projects/Kedaireka/landingPage.png";
 import KedairekaHome from "./Projects/Kedaireka/home.png";
@@ -77,6 +79,8 @@ export {
     Js,
     Ts,
     Mapbox,
+    Angular,
+    Ionic,
 
     KedairekaLanding,
     KedairekaHome,
