@@ -52,7 +52,12 @@ import {
     CertiportScores,
     BerijalanCertificate,
     BerijalanScores,
-    DCACertificate
+    DCACertificate,
+    MyDpaHome,
+    MyDpaEvent,
+    MyDpaFilter,
+    Angular,
+    Ionic
 } from '@/assets/images';
 
 export const listProject = [
@@ -80,7 +85,7 @@ export const listProject = [
         github: "",
         privateRepo: true,
         type: "web",
-        platform: "Web",
+        platform: ["Web"],
     },
     {
         title: "Brewtopia",
@@ -102,7 +107,7 @@ export const listProject = [
         github: "",
         privateRepo: true,
         type: "mobile",
-        platform: "Android",
+        platform: ["Android"],
     },
     {
         title: "Trackit",
@@ -124,7 +129,7 @@ export const listProject = [
         github: "",
         privateRepo: true,
         type: "web",
-        platform: "Web",
+        platform: ["Web"],
     },
     {
         title: "Sipasar Tour Guide",
@@ -143,16 +148,35 @@ export const listProject = [
             TourGuideNavigation,
         ],
         tech: [
-            {src: Kotlin, label: "Kotlin"},
-            {src: Mapbox, label: "Mapbox"}
+            { src: Kotlin, label: "Kotlin" },
+            { src: Mapbox, label: "Mapbox" }
         ],
         url: "",
         github: "",
         privateRepo: true,
         type: "mobile",
-        platform: "Android",
+        platform: ["Android"],
+    },
+    {
+        title: "Dana Pensiun Astra (myDpa)",
+        subtitle: "Developing application features",
+        description: "The Dana Pensiun Astra application, known as myDPA, is the official app developed by Dana Pensiun Astra to help participants easily access information and services related to their pension program.",
+        images: [
+            MyDpaHome,
+            MyDpaEvent,
+            MyDpaFilter,
+        ],
+        tech: [
+            { src: Angular, label: "Angular" },
+            { src: Ionic, label: "Ionic" }
+        ],
+        url: "https://new.dapenastra.com/home",
+        github: "",
+        privateRepo: true,
+        type: "mobile",
+        platform: ["Android", "IOS", "Web"],
     }
-]
+].reverse();
 
 export const listCertificates = [
     {

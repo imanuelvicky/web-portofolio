@@ -47,6 +47,11 @@ import TourGuidePlaceDetail from "./Projects/TourGuide/place_detail.png";
 import TourGuideChosenPlaces from "./Projects/TourGuide/chosen_places.png";
 import TourGuidePreviewMap from "./Projects/TourGuide/preview_map.png";
 import TourGuideNavigation from "./Projects/TourGuide/navigation.png";
+
+import MyDpaHome from "./Projects/MyDpa/home.png";
+import MyDpaEvent from "./Projects/MyDpa/event.png";
+import MyDpaFilter from "./Projects/MyDpa/filter.png";
+
 import Dicoding1 from "./Certificates/Dicoding/memulai_pemrograman_dengan_kotlin.png"
 import Dicoding2 from "./Certificates/Dicoding/memulai_dasar_pemrograman_menjadi_pengembang_software.png"
 import Dicoding3 from "./Certificates/Dicoding/pengenalan_logika_pemrograman.png"
@@ -92,7 +97,7 @@ export {
     KedairekaTable,
     KedairekaFormCreate,
 
-    TrackitLogin, 
+    TrackitLogin,
     TrackitMap,
     TrackitManagement,
     TrackitHistory,
@@ -115,6 +120,10 @@ export {
     TourGuideChosenPlaces,
     TourGuidePreviewMap,
     TourGuideNavigation,
+
+    MyDpaHome,
+    MyDpaEvent,
+    MyDpaFilter,
 
     Dicoding1,
     Dicoding2,

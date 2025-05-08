@@ -19,7 +19,7 @@ type Project = {
     github: string;
     privateRepo: boolean;
     type: string;
-    platform: string;
+    platform: [];
 };
 
 export default function Projects() {
@@ -65,7 +65,13 @@ export default function Projects() {
                                 </div>
 
                                 <p className="text-gray-700">{project.description}</p>
-                                <p className="text-gray-500 font-semibold ">Platform: <span className='w-full bg-slate-700 text-white rounded-md px-2 font-normal text-sm'>{project.platform}</span></p>
+                                <p className="text-gray-500 font-semibold">
+                                    Platform: {project.platform.map((platform, i) => (
+                                        <span key={i} className="w-full bg-slate-700 text-white rounded-md px-2 font-normal text-sm mx-1">
+                                            {platform}
+                                        </span>
+                                    ))}
+                                </p>
                             </div>
 
                             <div className='flex flex-col gap-3'>
@@ -146,8 +152,8 @@ export default function Projects() {
                                             )
                                         }
                                         className={`border-2 rounded-full w-6 ${activeSlides[index] === imageIndex
-                                                ? "border-[#293241]"
-                                                : "hover:border-gray-300"
+                                            ? "border-[#293241]"
+                                            : "hover:border-gray-300"
                                             }`}
                                     ></button>
                                 ))}
